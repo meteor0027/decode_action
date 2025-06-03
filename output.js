@@ -1,13 +1,13 @@
-//Tue Jun 03 2025 14:35:39 GMT+0000 (Coordinated Universal Time)
+//Tue Jun 03 2025 14:54:52 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 /**
  * cron "39 11,19 * * *" FTEJ.js
  * export FTEJ="账号1&密码1 账号2&密码2"
  */
-const $ = new Env("");
+const $ = new Env("\u798F\u7530e\u5BB6");
 const crypto = require("crypto");
-const notify = "";
+const notify = $.isNode() ? require("./sendNotify") : "";
 function a0d(a, b) {
   var c = a0c();
   return a0d = function (d, e) {
@@ -56,7 +56,7 @@ function a0d(a, b) {
         var l = function (m) {
           this["GMtMsJ"] = m, this["dxbUIg"] = [1, 0, 0], this["skhxHm"] = function () {
             return "newState";
-          }, this["MuaXSo"] = "w+ *() *{w+ *", this["wpkwbB"] = `['|"].+['|"];? *}`;
+          }, this["MuaXSo"] = "\\w+ *\\(\\) *{\\w+ *", this["wpkwbB"] = "['|\"].+['|\"];? *}";
         };
         l["prototype"]["weauFC"] = function () {
           var m = new RegExp(this["MuaXSo"] + this["wpkwbB"]),
@@ -981,7 +981,7 @@ a0at(), (() => {
     } else af[bX(902, "H9dD")](Y, {}, "");
   }
   function D() {
-    "use strict";
+    'use strict';
 
     var c2 = bk,
       c0 = bl,
@@ -2887,7 +2887,7 @@ a0at(), (() => {
             aL[gt(1231, "g]9*")] = 1;
             return aj = ai[gs(2030)], aJ[gs(1278)] = 12, J = aj[gt(1299, "&1F4")]("&")[0], K = aj[gs(1430)]("&")[1], console[gs(1549)](gs(2092)[gt(500, "Zm(6")](J, ad[gt(1392, "09L8")])), console[gt(1346, "g]9*")](ad[gt(1039, "S^kn")]), aJ[gt(492, "^F6g")] = 19, ad[gt(2393, "tVI)")](X, gt(1296, ")D7c") + gt(1032, "pj%m") + gt(1553, "XWN3") + gs(984), aL);
           case 19:
-            if (am = aJ[gt(1071, "5ma%24")], ad[gt(784, "9H%23A")](200, am[gt(751, "3DDb")])) {
+            if (am = aJ[gt(1071, "5ma$")], ad[gt(784, "9H#A")](200, am[gt(751, "3DDb")])) {
               if (ad[gt(954, "5ma$")](ad[gt(1710, "SCE@")], ad[gt(2256, "pj%m")])) {
                 var aP = H[gs(1232)] || {};
                 aP[gs(2128)] = af[gs(1891)], delete aP[gt(1139, "tLsm")], ak[gt(287, "^F6g")] = aP;
